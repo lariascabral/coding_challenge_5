@@ -34,4 +34,12 @@ cartItems.pop()                         // Deleting last product using .pop
 cartItems.unshift("Prepoo")             // Adding the first product in the hair washing process using .unshift
 cartItems.shift()                       // Un-adding prepoo from the list since not necessary using .shift
 
-console.log("Hair washing process products:", cartItems)
+console.log("Hair washing process products:", cartItems)        // Output: Hair washing process products: (3) ['Shampoo', 'Conditioner', 'Hair Mask']
+
+
+// Task 4 - Price Adjustments
+
+let prices = [100, 200, 300] ;          // Creation of array
+let discountedPrices = prices.map(price => price - (price * 0.10)) ;         // Using .map to apply 10% discount
+
+console.log("Prices with 10% discount applied:", discountedPrices) ;        // Output: Prices with 10% discount applied: (3) [90, 180, 270]
