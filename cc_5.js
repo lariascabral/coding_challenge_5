@@ -24,3 +24,14 @@ let order ={
 } ;                                      // Addition of displayOrder method using this
 
 order.displayOrder() ;                   // Calling the method displayOrder
+
+
+// Task 3 - Shopping Cart
+
+let cartItems = ["Shampoo", "Conditioner", "Hair Mask"] ;     // Creation of array
+cartItems.push("Curly Cream") ;         // Adding a new product using .push
+cartItems.pop()                         // Deleting last product using .pop
+cartItems.unshift("Prepoo")             // Adding the first product in the hair washing process using .unshift
+cartItems.shift()                       // Un-adding prepoo from the list since not necessary using .shift
+
+console.log("Hair washing process products:", cartItems)
