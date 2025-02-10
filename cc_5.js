@@ -47,7 +47,7 @@ console.log("Prices with 10% discount applied:", discountedPrices) ;        // O
 
 // Task 5 - Product Availability
 
-let inventory = [25, 0, 62, 80, 99, 102, 0] ;    // Creation of array
+let inventory = [25, 0, 62, 80, 99, 102, 0] ;   // Creation of array
 let productAvailability = inventory.filter(quantity => quantity) ;      // Usage of .filter to polish inventory results
 
 console.log("Quantities in the inventory:", productAvailability) ;       // Output: Quantities in the inventory: (5) [25, 62, 80, 99, 102]
@@ -67,3 +67,18 @@ let customers = ["Alice", "Bob", "Charlie", "David"] ;      // Creation of array
 let searchCustomer = customers.find(customer => customer === "Charlie") ;       // Search for an specific customer
 
 console.log("Customer found:", searchCustomer) ;        // Output:Customer found: Charlie
+
+
+// Task 8 - Tax Calculation
+
+function calculateTax(amount, taxRate) {
+    return amount * (taxRate / 100) ;             // Function creation for tax rate
+} ;
+       // Example case
+       let amount = 200 ; 
+       let taxRate = 22 ;                         // 22% tax rate
+
+console.log(`The calculated tax for $${amount} at a ${taxRate} tax rate is $${calculateTax(amount, taxRate)}`)
+                                                  // The calculated tax for $200 at a 22 tax rate is $44
+
+
