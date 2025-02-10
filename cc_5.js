@@ -58,4 +58,12 @@ console.log("Quantities in the inventory:", productAvailability) ;       // Outp
 let sales = [500, 300, 200, 400] ;              // Creation of array
 let totalRevenue = sales.reduce((sum, totalSales) => sum + totalSales, 0) ;       // Reducing all sales into one value of totalRevenue with .reduce
 
-console.log(`Total Revenue: $${totalRevenue}`)     // Output: Total Revenue: $1400
+console.log(`Total Revenue: $${totalRevenue}`) ;     // Output: Total Revenue: $1400
+
+
+// Task 7 - Customer Search
+
+let customers = ["Alice", "Bob", "Charlie", "David"] ;      // Creation of array
+let searchCustomer = customers.find(customer => customer === "Charlie") ;       // Search for an specific customer
+
+console.log("Customer found:", searchCustomer) ;        // Output:Customer found: Charlie
