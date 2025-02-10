@@ -78,7 +78,22 @@ function calculateTax(amount, taxRate) {
        let amount = 200 ; 
        let taxRate = 22 ;                         // 22% tax rate
 
-console.log(`The calculated tax for $${amount} at a ${taxRate} tax rate is $${calculateTax(amount, taxRate)}`)
+console.log(`The calculated tax for $${amount} at a ${taxRate} tax rate is $${calculateTax(amount, taxRate)}`) ;
                                                   // The calculated tax for $200 at a 22 tax rate is $44
+
+
+// Task 9 - Discount Application
+
+const applyDiscount = function(price, discount) {
+    return price - (price * (discount / 100)) ;    // Function for discounts
+} ;
+       // Example case
+       let purchasePrice = 900 ; 
+       let discountPercentage = 20 ;               // 20% discount
+
+console.log(`The discounted price is $${applyDiscount(purchasePrice, discountPercentage)}`, "for this purchase") ;
+                                                   // The discounted price is $720 for this purchase
+
+
 
 
