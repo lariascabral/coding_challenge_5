@@ -52,3 +52,10 @@ let productAvailability = inventory.filter(quantity => quantity) ;      // Usage
 
 console.log("Quantities in the inventory:", productAvailability) ;       // Output: Quantities in the inventory: (5) [25, 62, 80, 99, 102]
 
+
+// Task 6 - Revenue Calculation
+
+let sales = [500, 300, 200, 400] ;              // Creation of array
+let totalRevenue = sales.reduce((sum, totalSales) => sum + totalSales, 0) ;       // Reducing all sales into one value of totalRevenue with .reduce
+
+console.log(`Total Revenue: $${totalRevenue}`)     // Output: Total Revenue: $1400
