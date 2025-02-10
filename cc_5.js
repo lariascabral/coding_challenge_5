@@ -95,5 +95,14 @@ console.log(`The discounted price is $${applyDiscount(purchasePrice, discountPer
                                                    // The discounted price is $720 for this purchase
 
 
+// Task 10 - Loyalty Points
 
+const calculatePoints = (purchaseAmount) => {      // Function of rcalculating loyalty points
+    return Math.floor(purchaseAmount / 10)         // 1 point per dollar spent with us
+} ;
 
+      // Example case
+      let purchaseAmount = 724.99 ;
+
+console.log(`Thank you for shopping with us. For this purchase of $${purchaseAmount}, you earned a total of ${calculatePoints(purchaseAmount)} loyalty points!`)
+                                               // Output: Thank you for shopping with us. For this purchase of $724.99, you earned a total of 72 loyalty points!
